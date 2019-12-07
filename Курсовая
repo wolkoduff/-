@@ -1,0 +1,29 @@
+print("Введите первое нечёткое число, разделяя его пробелами: ")
+
+a = input().split()
+
+print("Введите второе нечёткое число, разделяя его пробелами: ")
+
+b = input()
+
+numbers = ""
+
+for j in a:
+
+    if j in a:
+    
+        numbers += j
+        
+
+print(b)
+
+for i in a:
+
+    if a[i] == "/":
+    
+        a[i] = a[i-1] / a[i + 1]
+        
+
+print(a)
+
+print(b)
