@@ -255,18 +255,21 @@ slovarik = {1: {'111': 0, '110': 0, '101': 0, '100': 0, '011': 0, '010': 0, '001
 			255: {'111': 1, '110': 1, '101': 1, '100': 1, '011': 1, '010': 1, '001': 1, '000': 1}}
 
 
-vector = ['0','0','0','0','0','0','0','0','0','0','1','0','0','0','0','0','0','0','0','0']
+old_vector = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 n = int(input("Введите число от 1 до 255 для работы автомата: "))
+p = int(input("Введите кол-во прогонов вектора по самому себе: "))
 c = slovarik[n]
 j = 0
+vector = old_vector.copy()
 new_vector = vector.copy()
-for i in range(1, len(vector) - 1, 1):
+print("Шаг ", j, "Вектор:", vector)
+for j in range(p):
     j += 1
-    b = vector[i - 1] + vector[i] + vector[i + 1]
-    new_vector[i] = (str(c[b]))
-    print("Шаг №",str(j) + ". Состояние вектора: ", vector)
-    
-    
-print("\nИсходное состояние вектора до работы автомата:\t\t", vector)
-print("Последнее состояние вектора после работы автомата:\t", new_vector)
+    vector = new_vector.copy()
+    for i in range(1, len(vector) - 1, 1):
+        b = str(vector[i - 1]) + str(vector[i]) + str(vector[i + 1])
+        new_vector[i] = c[b]
+    print("Шаг", j, ". Вектор:", new_vector)
 
+print("\nИсходное состояние вектора до работы автомата:\t\t", old_vector)
+print("Последнее состояние вектора после работы автомата:\t", new_vector)
