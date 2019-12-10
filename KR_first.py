@@ -263,10 +263,10 @@ new_vector = vector.copy()
 for i in range(1, len(vector) - 1, 1):
     j += 1
     b = vector[i - 1] + vector[i] + vector[i + 1]
-    vector[i] = (str(c[b]))
+    new_vector[i] = (str(c[b]))
     print("Шаг №",str(j) + ". Состояние вектора: ", vector)
     
     
-print("\nИсходное состояние вектора до работы автомата:\t\t", new_vector)
-print("Последнее состояние вектора после работы автомата:\t", vector)
+print("\nИсходное состояние вектора до работы автомата:\t\t", vector)
+print("Последнее состояние вектора после работы автомата:\t", new_vector)
 
