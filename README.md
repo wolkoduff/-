@@ -6,7 +6,8 @@ Bashni.py
 raiting.py
 # Исходный файл и результат программы с рейтингом
 group.tsv
-\n group_res.tsv
+
+group_res.tsv
 # КР с вектором
 KR_first.py
 # Фибоначчи числовой ряд
