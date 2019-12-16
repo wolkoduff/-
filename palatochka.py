@@ -4,93 +4,59 @@
 # если нет, тогда встают в очередь
 # время обслуживания константа или рандом. ВЫбрано Константа
 
-import random
-import collections
-import queue
-import argparse
+from queue import Queue
+from threading import Thread
 import time
+import random
+class Customer(object):
 
-DEFAULT_NUMBER_OF_QUENE = 3     # Размер очереди
-WAIT_DURATION = 20              # продолжительность ожидания
-SERVICE_DURATION = 5            # продолжительность обслуживания клиента
-ARRIVAL_INTERVAL = 8            # интервал появления людей
-flag = True
-
-Event = collections.namedtuple('Событие', 'Время Участники Действие')
-
-# Время начала симуляции работы палатки
-def tent_process(ident, trips, start=30, flag):  
-    time = yield Event(start, ident, 'Прибытие очереди людей')  
-    while flag: 
-        time = yield Event(time, ident, 'Люди встали в очередь') 
-        time = yield Event(time, ident, 'Люди ушли')
-
-class Simulator:
-
-    def __init__(self, procs_map):
-        self.events = queue.PriorityQueue()
-        self.procs = dict(procs_map)
-
-    def run(self):  # <1>
-        """Планирование и отображение событий до истечения времени"""
-        # запланируйте первое событие для каждой машины
-        for _, proc in sorted(self.procs.items()):  
-            first_event = next(proc)  # <3>
-            self.events.put(first_event)  # <4>
-
-        # главный цикл работы симуляции
-        sim_time = 0  # <5>
-        while True:
-            if self.events.empty(): 
-                print('*** end of events ***')
-                break
-
-            if (queue_people > 3):
-                flag = False
-
-            else:
-                queue += 1
-
-            current_event = self.events.get()
-            sim_time, proc_id, previous_action = current_event 
-            print('taxi:', proc_id, proc_id * '   ', current_event) 
-            active_proc = self.procs[proc_id]
-            next_time = sim_time + compute_duration(previous_action)
-            try:
-                next_event = active_proc.send(next_time)
-            except StopIteration:
-                del self.procs[proc_id] 
-            else:
-                self.events.put(next_event)
-        else: 
-            msg = '*** end of simulation time: {} events pending ***'
-            print(msg.format(self.events.qsize()))
-# Завершение симуляции работы палатки
-
-
-def compute_duration(previous_action):
-    """Вычисление длительность действия с использованием экспоненциального распределения"""
-    if previous_action in ['Люди ушли', 'Человек обслужен']:
-        # Время интервала - поиск клиента
-        interval = WAIT_DURATION
-    elif previous_action == 'Люди встали в очередь':
-        # Время интервала - время поездки
-        interval = SERVICE_DURATION
-    else:
-        raise ValueError('Unknown previous_action: %s' % previous_action)
-    return int(random.expovariate(1/interval)) + 1
-
-
-def main(num_queue=DEFAULT_NUMBER_OF_QUENE, seed=None):
-    """Initialize random generator, build procs and run simulation"""
-    if seed is not None:
-        random.seed(seed)  # получить воспроизводимые результаты
-
-    i = 1
-    queue_people = 30
-    flager = True
-    taxis = {i: tent_process(i, (i+1)*2, i*ARRIVAL_INTERVAL, flager)}
-    sim = Simulator(taxis)
-    sim.run()
-
-main()
+    def __init__(self, number):
+        """Constructor"""
+        self.number = number
+    
+    def come(self):
+        return "Человек № %s решил заглянуть в палатку" % self.number 
+    
+    def leave(self):
+        return "Человек ушел" 
+    def order(self,q):
+        if((not(q.empty()))&(q.qsize()<3)):q.put(self); print("Человек",self.number,"встает в очередь, размер очереди:", q.qsize())
+        elif(q.qsize()>=3): print("Человек", self.number, "не хочет стоять в очереди, размер очереди:", q.qsize())
+        elif(q.empty()): q.put(self); print("Человек",self.number,"подходит к палатке чтобы сделать заказ")
+        return self.number
+    
+class Cashier(object):
+    def __init__(self, q):
+        self.q=q
+    def service(self):
+        print("Кассир начинает обслуживать покупателя")
+    def servcomplete(self):
+        amount = random.randint(4, 7)
+        time.sleep(amount)
+        self.cu=(self.q.get()).number
+        self.cust=Customer(self.cu)
+        print("Кассир завершил обслуживание покупателя ", self.cu)
+def serv(qc, cash):
+    if(qc.empty()): time.sleep(1.2)
+    while(not(qc.empty())):
+        if(not(qc.empty())): cash.service(); cash.servcomplete()
+def people(qc,lenght):
+    for i in range(1,lenght+1):
+        cust=Customer(i)
+        print(cust.come())
+        cust.order(qc)
+        amount = random.randint(2, 3)
+        time.sleep(amount)
+    
+def main():
+    q=Queue()
+    cash=Cashier(q)
+    lenght=30 #длина очереди
+    thr1=Thread(target=serv, args=(q,cash))
+    thr2=Thread(target=people, args=(q,lenght))
+    thr1.start() 
+    thr2.start()
+    thr1.join()
+    thr2.join() 
+if __name__== '__main__':
+   main()
