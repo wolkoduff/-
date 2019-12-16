@@ -12,3 +12,5 @@ group_res.tsv
 KR_first.py
 # Фибоначчи числовой ряд
 fibonachchi.py
+# Палатка
+palatochka.py
