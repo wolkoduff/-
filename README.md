@@ -14,3 +14,5 @@ KR_first.py
 fibonachchi.py
 # Палатка
 palatochka.py
+# База данных вместо pd.airlines, реализована на SQLite, представления как в исходных файлах для задачи
+Dovgerd_IA.db
