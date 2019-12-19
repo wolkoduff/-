@@ -1,51 +1,34 @@
-print("Введите первое нечёткое число(тройку его параметров{a, x, b}, разделяя его пробелами: ")
+print("Введите первое нечёткое число(тройку его параметров{a, x, b}, где a <= x, b <= x, x - точка максимума графика функции), разделяя его пробелами: ")
 a = input().split()
-print("Введите второе нечёткое число(тройку его параметров{a, x, b}, разделяя его пробелами: ")
+print("Введите второе нечёткое число(тройку его параметров{a, x, b}, где a <= x, b <= x, x - точка максимума графика функции), разделяя его пробелами: ")
+b = input().split()
+
+print("Введите первое нечёткое число(тройку его параметров{a, x, b}), разделяя его пробелами: ")
+a = input().split()
+print("Введите второе нечёткое число(тройку его параметров{a, x, b}), разделяя его пробелами: ")
 b = input().split()
 
 A = []
 B = []
 
-A_new = []
-B_new = []
+for i in range(0, len(a), 1):
+    if float(a[i]) != float(max(a)):
+        A.append(float(a[i]))
 
-maximum = 0.0
-minimum = 9999.0
-overloper = 0.0
+kostil = A[1]
+A[1] = float(max(a))
+A.append(kostil)
 
-for i in a:
-    A.append(float(i))
+for i in range(0, len(b), 1):
+    if float(b[i]) != float(max(b)):
+        B.append(float(b[i]))
 
-for i in b:
-    B.append(float(i))
+kostil = B[1]
+B[1] = float(max(b))
+B.append(kostil)
 
-for i in A:
-    if i > maximum:
-        maximum = i
-    elif i < minimum:
-        minimum = i
-    else:
-        overloper = i
-
-A_new.append(minimum)
-A_new.append(maximum)
-A_new.append(overloper)
-
-for i in B:
-    if i > maximum:
-        maximum = i
-    elif i < minimum:
-        minimum = i
-    else:
-        overloper = i
-
-B_new.append(minimum)
-B_new.append(maximum)
-B_new.append(overloper)
-
-C = [round(A_new[0] / B_new[0], 2), round((A_new[1] / B_new[1]), 2), round((A_new[2] / B_new[2]), 2)]
-print("Первое нечёткое число(А):", A_new)
-print("Второе нечёткое число(В):", B_new)
-print("Деление нечётких чисел:", A_new, "/", B_new)
+C = [round(B[0] / A[2], 2), round((A[1] / B[1]), 2), round((B[2] / A[0]), 2)]
+print("Первое нечёткое число(А):", A)
+print("Второе нечёткое число(В):", B)
+print("Деление нечётких чисел:", A, "/", B)
 print("Ответ:", C)
-
