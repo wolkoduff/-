@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-06-09T19:21:35.645Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 OPR/77.0.4054.60" etag="BRjo8g0K4Uvstx_x2IN4" version="14.7.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-09T19:23:56.217Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 OPR/77.0.4054.60" etag="bU9UMhfcKM297nSsBxux" version="14.7.6" type="github">
   <diagram id="IMNbEbqrIpcsrLyuV6MN" name="Page-1">
-    <mxGraphModel dx="3200" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="4013" dy="2417" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -26,11 +26,11 @@
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-37" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Корректировка программы испытаний&lt;br&gt;Запуск процесса испытаний&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yDvGkLI96mo0AxkriHrv-28">
           <mxGeometry x="0.2235" y="-3" relative="1" as="geometry">
-            <mxPoint x="3" y="1" as="offset" />
+            <mxPoint x="3" y="-18" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-3" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Сотрудник дежурной смены&lt;/font&gt;" style="image;html=1;image=img/lib/clip_art/people/Scientist_Woman_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="-200" y="25" width="80" height="80" as="geometry" />
+          <mxGeometry x="-200" y="-40" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="yDvGkLI96mo0AxkriHrv-7" target="yDvGkLI96mo0AxkriHrv-11">
           <mxGeometry relative="1" as="geometry" />
@@ -49,7 +49,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-7" value="" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="920" y="25" width="80" height="80" as="geometry" />
+          <mxGeometry x="920" y="-40" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="yDvGkLI96mo0AxkriHrv-8" target="yDvGkLI96mo0AxkriHrv-16">
           <mxGeometry relative="1" as="geometry" />
@@ -84,7 +84,7 @@
           <mxGeometry x="-225" y="275" width="130" height="110" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-11" value="&lt;font style=&quot;font-size: 26px&quot;&gt;ЦКБ/Конструкторские бюро&lt;/font&gt;" style="image;html=1;image=img/lib/clip_art/computers/Workstation_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="1425" y="-190" width="150" height="130" as="geometry" />
+          <mxGeometry x="1436.25" y="-280" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="yDvGkLI96mo0AxkriHrv-14" target="yDvGkLI96mo0AxkriHrv-8">
           <mxGeometry relative="1" as="geometry" />
@@ -107,34 +107,34 @@
           <mxGeometry x="536.25" y="480" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-16" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Dashboard.svg;connectable=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="-10" width="212.5" height="150" as="geometry" />
+          <mxGeometry x="470" y="-75" width="212.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-17" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Панель мониторинга и&lt;br&gt;планирования испытаний&lt;br&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;климатического участка&lt;/span&gt;&lt;/font&gt;" style="text;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;spacing=0;fontSize=36;fontFamily=Helvetica;html=1;arcSize=10;imageWidth=22;imageHeight=22;imageAspect=0;imageAlign=center;connectable=0;recursiveResize=1;" vertex="1" parent="1">
-          <mxGeometry x="410" y="-160" width="320" height="150" as="geometry" />
+          <mxGeometry x="416.25" y="-225" width="320" height="150" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-20" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Отдел технического контроля&lt;/font&gt;" style="image;html=1;image=img/lib/clip_art/computers/Workstation_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="1425" width="150" height="130" as="geometry" />
+          <mxGeometry x="1436.25" y="-65" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-21" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Отделы/Цеха&lt;/font&gt;" style="image;html=1;image=img/lib/clip_art/computers/Workstation_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="1425" y="220" width="150" height="130" as="geometry" />
+          <mxGeometry x="1436.25" y="210" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="yDvGkLI96mo0AxkriHrv-22" target="yDvGkLI96mo0AxkriHrv-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-22" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Компьютер рабочей смены&lt;/font&gt;" style="image;html=1;image=img/lib/clip_art/computers/Workstation_128x128.png" vertex="1" parent="1">
-          <mxGeometry x="170" width="150" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="yDvGkLI96mo0AxkriHrv-42" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1437.5" y="170" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="yDvGkLI96mo0AxkriHrv-43" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1487.5" y="170" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="yDvGkLI96mo0AxkriHrv-44" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1540" y="170" width="30" height="30" as="geometry" />
+          <mxGeometry x="170" y="-65" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="yDvGkLI96mo0AxkriHrv-45" value="&lt;font style=&quot;font-size: 26px&quot;&gt;PostgresPro&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="880" y="-30" width="160" height="20" as="geometry" />
+          <mxGeometry x="880" y="-70" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yDvGkLI96mo0AxkriHrv-47" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1448.13" y="150" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yDvGkLI96mo0AxkriHrv-48" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1498.13" y="150" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yDvGkLI96mo0AxkriHrv-49" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1544.38" y="150" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
