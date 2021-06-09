@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-09T18:53:17.755Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 OPR/77.0.4054.60" etag="VMnApEamf0iHsKpufyJ7" version="14.7.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-09T18:55:27.006Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36 OPR/77.0.4054.60" etag="ce6zwMfLgnQpm9D3Vxai" version="14.7.6" type="github">
   <diagram id="IMNbEbqrIpcsrLyuV6MN" name="Page-1">
     <mxGraphModel dx="1422" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -52,7 +52,7 @@
         <mxCell id="yDvGkLI96mo0AxkriHrv-16" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Dashboard.svg;" vertex="1" parent="1">
           <mxGeometry x="470" y="140" width="212.5" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="yDvGkLI96mo0AxkriHrv-17" value="Панель мониторинга и&#xa;планирования испытаний&#xa;климатического участка" style="text;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;spacing=2;fontSize=36;fontFamily=Helvetica;" vertex="1" parent="1">
+        <mxCell id="yDvGkLI96mo0AxkriHrv-17" value="Панель мониторинга и&#xa;планирования испытаний&#xa;климатического участка" style="text;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;spacing=1;fontSize=36;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="340" y="5" width="450" height="140" as="geometry" />
         </mxCell>
       </root>
